@@ -1,0 +1,51 @@
+.contenedor {
+    width: 90%;
+    background-color:rgb(250, 245, 245);
+    margin: auto;
+    max-width: 1300px;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    /*position: sticky;
+*/
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logo {
+    margin: 10px;
+    /*width: 300px;
+    height: 250px;*/
+}
+
+nav {
+    width: 100%;
+    margin: 10px;
+    background-color: #1698d0;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+nav a {
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #1698d0;
+    color: #fff;
+    padding: 10px;
+
+    /*flex-grow: 1;*/
+}
+
+nav a:hover {
+    border-top:solid;
+    border-color:#0f6e96;
+    border-top-width: 5px;
+}
+
