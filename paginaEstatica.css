@@ -1,16 +1,15 @@
 .contenedor {
     width: 90%;
-    background-color:rgb(250, 245, 245);
     margin: auto;
     max-width: 1300px;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 header {
     width: 100%;
-    padding: 20px;
+    background-color: #efefef;
     /*position: sticky;
 */
     display: flex;
@@ -18,25 +17,22 @@ header {
 }
 
 .logo {
+    padding-left: 20px;
     margin: 10px;
-    /*width: 300px;
-    height: 250px;*/
 }
 
 nav {
     width: 100%;
-    margin: 10px;
-    background-color: #1698d0;
+    background-color: #1079a6;
     display: flex;
     flex-flow: row wrap;
-    
 }
 
 nav a {
     width: 150px;
     text-decoration: none;
     text-align: center;
-    background-color: #1698d0;
+    background-color: #1079a6;
     color: #fff;
     padding: 10px;
 
@@ -45,7 +41,55 @@ nav a {
 
 nav a:hover {
     border-top:solid;
-    border-color:#0f6e96;
+    border-color:#0c5575;
     border-top-width: 5px;
+}
+
+.carousel {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-caption {
+    position:initial;
+    padding-top: 0px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1698d0;
+    margin: 0px;
+}
+
+.carousel-caption p {
+    margin-bottom: 0px;
+    font-size: large;
+    color: #1698d0;
+}
+
+#registrarse {
+    margin-top: 30px;
+}
+
+h5 {
+    padding: 10px;
+    background-color: #1079a6;
+    color: #fff;
+}
+
+.formulario {
+    margin: 20px;
+}
+
+.termyCond {
+    text-decoration: underline;
+    color:#1079a6;
+}
+
+.btn {
+    width: 150px;
+    background-color: #1079a6;
 }
 
