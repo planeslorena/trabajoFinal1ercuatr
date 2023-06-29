@@ -1,0 +1,98 @@
+.contenedor {
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    width: 100%;
+    background-color: #efefef;
+    /*position: sticky;
+*/
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logo {
+    padding-left: 20px;
+    margin: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: #1079a6;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav a {
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #1079a6;
+    color: #fff;
+    padding: 10px;
+
+    /*flex-grow: 1;*/
+}
+
+nav a:hover {
+    border-top:solid;
+    border-color:#0c5575;
+    border-top-width: 5px;
+}
+
+.div-listas {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.crear-lista {
+    margin: 20px;
+    padding: 10px;
+    background-color: #64CCC5;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.h-listas {
+    margin-top: 10px;
+    color:#0c5575;
+}
+
+.btn-agregar-lista {
+    font-size: 50px;
+    background-color:transparent;
+    border:none;
+    color:#0c5575;
+}
+
+.div-lista-nueva {
+    margin: 20px;
+    padding: 10px;
+    background-color: #64CCC5;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;   
+}
+
+.div-nombre-lista {
+    display: flex;
+}
+
+.btn-nombre-lista {
+    color:#0c5575;
+    border-radius: 50px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.btn-nombre-lista:hover {
+    background-color: grey;
+}

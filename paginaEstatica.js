@@ -1,6 +1,7 @@
+'use strict'
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
-    'use strict'
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
@@ -30,6 +31,12 @@ function cargarProvincias() {
     }
 }
 
+function validarDatos() {
+    let contraseña = document.getElementById("contraseña");
+    if (contraseña.value.length < 8) {
+        contraseña.classList.add('is-invalid');
+    }
+} 
 /*  const botonocultar = document.getElementById("botonocultar");
   botonocultar.addEventListener('click', function (e) {
      document.querySelector(".informacion").setAttribute("hidden","true");
@@ -43,9 +50,3 @@ function cargarProvincias() {
 */
 window.addEventListener('load', cargarProvincias);
 
-function validarDatos() {
-    let contraseña = document.getElementById("contraseña");
-    if (contraseña.value.length < 8) {
-        contraseña.classList.add('is-invalid');
-    }
-}
