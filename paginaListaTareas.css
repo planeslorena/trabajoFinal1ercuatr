@@ -34,8 +34,6 @@ nav a {
     background-color: #1079a6;
     color: #fff;
     padding: 10px;
-
-    /*flex-grow: 1;*/
 }
 
 nav a:hover {
@@ -50,7 +48,7 @@ nav a:hover {
 }
 
 .crear-lista {
-    margin: 20px;
+    margin: 20px 10px;
     padding: 10px;
     background-color: #64CCC5;
     width: 150px;
@@ -72,48 +70,102 @@ nav a:hover {
 }
 
 .div-lista-nueva {
-    margin: 20px;
+    margin: 20px 10px;
+    padding: 0px 4px;
     background-color: #64CCC5;
     width: 300px;
-    height: 400px;
+    min-height: 400px;
+    height: 80%;
     border-radius: 5px;
-    text-align: center;   
+    text-align: right;
 }
 
 .div-nombre-lista {
-    padding: 20px;
     display: flex;
     flex-direction: row;
 }
 
 .div-nombre-lista-img {
-    padding: 20px;
-    /*display: flex;
-    flex-direction: row;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-nombre-lista{
     border: none;
     background-color: transparent;
     width: 90%;
-    color:#0c5575
+    color:#0c5575;
+    margin-right: 5px;
 }
 
-.btn-nombre-lista {
+.btn {
     border: none;
     background-color: transparent;
     color:#0c5575;
-    margin: 3px;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 3px;
 }
 
-.btn-nombre-lista:hover {
+.btn:hover {
     background-color: rgb(210, 208, 208);
+}
+
+.div-alerta {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 15px;
 }
 
 .div-lista-nueva h5 {
     color:#0c5575;
     text-align: center;
-    margin: 5px;
+}
+
+.crear-tareas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-nombre-tarea {
+    border: none;
+    width: 100%;
+}
+
+ul {
+    margin-top:5px;
+    padding-left: 3px;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+}
+
+.check:checked + label {
+    text-decoration:line-through;
+    color: gray;
+}
+
+.check:checked {
+    border-image-width: 0px;
+    background-color: #0c5575;
+}
+
+.tarea {
+    padding-left: 5px;
+    text-align: left;
+    vertical-align:middle;
+    width: 90%;
+    color: #0c5575;
 }
