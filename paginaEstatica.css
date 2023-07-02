@@ -1,8 +1,4 @@
 .contenedor {
-    width: 90%;
-    margin: auto;
-    max-width: 1300px;
-
     display: flex;
     flex-flow: column wrap;
 }
@@ -10,8 +6,7 @@
 header {
     width: 100%;
     background-color: #efefef;
-    /*position: sticky;
-*/
+
     display: flex;
     flex-flow: column wrap;
 }

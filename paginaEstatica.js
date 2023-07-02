@@ -1,8 +1,8 @@
-'use strict'
+//
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
-
+    'use strict'
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
 
@@ -37,16 +37,7 @@ function validarDatos() {
         contraseña.classList.add('is-invalid');
     }
 } 
-/*  const botonocultar = document.getElementById("botonocultar");
-  botonocultar.addEventListener('click', function (e) {
-     document.querySelector(".informacion").setAttribute("hidden","true");
-  });
 
-  const boton = document.getElementById("boton");
-  boton.addEventListener('click', function (e) {
-      document.querySelector(".informacion").removeAttribute("hidden");
-  });
- 
-*/
 window.addEventListener('load', cargarProvincias);
-
+const btnRegistrarse = document.getElementById("btn-registrarse");
+btnRegistrarse.addEventListener("click",validarDatos);

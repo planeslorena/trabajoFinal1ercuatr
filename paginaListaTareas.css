@@ -10,8 +10,7 @@
 header {
     width: 100%;
     background-color: #efefef;
-    /*position: sticky;
-*/
+
     display: flex;
     flex-flow: column wrap;
 }
@@ -56,7 +55,7 @@ nav a:hover {
     background-color: #64CCC5;
     width: 150px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -74,25 +73,47 @@ nav a:hover {
 
 .div-lista-nueva {
     margin: 20px;
-    padding: 10px;
     background-color: #64CCC5;
     width: 300px;
     height: 400px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;   
 }
 
 .div-nombre-lista {
+    padding: 20px;
     display: flex;
+    flex-direction: row;
+}
+
+.div-nombre-lista-img {
+    padding: 20px;
+    /*display: flex;
+    flex-direction: row;*/
+}
+
+.input-nombre-lista{
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    color:#0c5575
 }
 
 .btn-nombre-lista {
+    border: none;
+    background-color: transparent;
     color:#0c5575;
+    margin: 3px;
     border-radius: 50px;
     font-size: 30px;
-    display: inline-block;
 }
 
 .btn-nombre-lista:hover {
-    background-color: grey;
+    background-color: rgb(210, 208, 208);
+}
+
+.div-lista-nueva h5 {
+    color:#0c5575;
+    text-align: center;
+    margin: 5px;
 }
