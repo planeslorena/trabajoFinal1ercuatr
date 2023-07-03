@@ -1,3 +1,4 @@
+//Funcion para agregar una nueva lista
 const agregarLista = () => {
     //Tomo el div que contiene las listas
     let divTareas = document.querySelector(".div-listas");
@@ -10,11 +11,11 @@ const agregarLista = () => {
     //agrego la nueva lista al div principal
     divTareas.appendChild(nuevaLista);
 
-    //creo un div para boton lista
+    //creo el boton de eliminar lista
     let btnEliminarLista = document.createElement("button");
     btnEliminarLista.classList.add("btn", "bi", "bi-x");
     btnEliminarLista.setAttribute("onclick", "eliminarLista(event)");
-    //lo agrego al div nueva lista
+    //lo agrego al div lista nueva
     nuevaLista.appendChild(btnEliminarLista);
 
     //creo un div para el encabezado de la lista
@@ -22,7 +23,7 @@ const agregarLista = () => {
     divNombreLista.classList.add("div-nombre-lista");
     divNombreLista.setAttribute("id", "div-nombre-lista");
 
-    //lo agrego al div nueva lista
+    //lo agrego al div lista nueva
     nuevaLista.appendChild(divNombreLista);
 
     //Le agrego el input para el nombre de lista
@@ -30,8 +31,7 @@ const agregarLista = () => {
     inputnombreLista.setAttribute("type", "text");
     inputnombreLista.setAttribute("placeholder", "Ingrese nombre de la lista");
     inputnombreLista.setAttribute("id", "input-nombre-lista");
-    inputnombreLista.classList.add("input-nombre-lista");
-    inputnombreLista.classList.add("form-control");
+    inputnombreLista.classList.add("input-nombre-lista","form-control");
 
     //agrego el input al encabezado
     divNombreLista.appendChild(inputnombreLista);
@@ -92,7 +92,6 @@ const guardarNombreLista = (event) => {
 
 //Funcion para agregar tarea a la lista
 const agregarTarea = (event) => {
-
     const boton = event.target;
     const nombreTarea = boton.previousElementSibling;
     const divCrearTarea = boton.parentElement;
@@ -116,12 +115,13 @@ const agregarTarea = (event) => {
     }
 }
 
+//Funcion que actualiza atributo checked del checkbox
 const agregarAtributoCheck = (event) => {
     const checkbox = event.target;
     if (checkbox.hasAttribute("checked") == false) {
         checkbox.setAttribute("checked","true");
     } else {
-        checkbox.removeAttibute("checked");
+        checkbox.removeAttribute("checked");
     }
 }
 
@@ -130,6 +130,7 @@ const eliminarTarea = (event) => {
     event.target.parentElement.remove();
 }
 
+//Funcion que al cargar la pagina agrega un escuchador de eventos al boton agregar lista
 const inicializarJs = () => {
     const boton = document.getElementById("btn-agregar-lista");
     boton.addEventListener("click", function (e) {

@@ -11,11 +11,12 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./paginaEstatica.css" />
+    <script type="text/javascript" src="./paginaEstatica.js"></script>
 </head>
 
 <body>
     <div class="contenedor">
-        <header class="encabezado">
+        <header class=>
             <div class="logo">
                 <img src="images/logosolo.png" alt="logo">
                 <img src="images/logoTEXTO.png" alt="logo">
@@ -67,79 +68,73 @@
 
         <section id="registrarse">
             <h5>REGISTRARSE</h5>
-            <form class="formulario row g-3" novalidate>
+            <form class="formulario row g-3" id ="form" novalidate>
                 <div class="col-md-6">
                     <label for="validationServer01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationServer01" placeholder="Ingrese su nombre"
-                        required>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
                     <div id="validationServer01Feedback" class="invalid-feedback">
-                        Por favor ingrese su nombre.
+                        El nombre debe tener 3 o mas caracteres.
                     </div>
                 </div>
                 <div class="col-md-6 needs-validation">
                     <label for="validationServer02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationServer02" placeholder="Ingrese su apellido"
-                        required>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
                     <div id="validationServer02Feedback" class="invalid-feedback">
-                        Por favor ingrese su apellido.
+                        El apellido debe tener 3 o mas caracteres.
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="exampleDataList" class="form-label">Provincia</label>
-                    <input class="form-control" list="datalistOptions" id="exampleDataList"
-                        placeholder="Escriba para buscar..." required>
+                    <input class="form-control" list="datalistOptions" id="provincia" placeholder="Escriba para buscar..." required>
                     <datalist id="datalistOptions">
                     </datalist>
                     <div id="validationDataListFeedback" class="invalid-feedback">
-                        Por favor elija una provincia.
+                        Por favor elija una provincia del listado
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="validationServer03" class="form-label">Localidad</label>
-                    <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" required>
+                    <input type="text" class="form-control" id="localidad" placeholder="Localidad" required>
                     <div id="validationServer03Feedback" class="invalid-feedback">
                         Por favor ingrese su localidad.
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="validationServer04" class="form-label">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" id="validationServer04" placeholder="Fecha de Nacimiento"
-                        required>
+                    <input type="date" class="form-control" id="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
                     <div id="validationServer04Feedback" class="invalid-feedback">
                         Por favor ingrese su fecha de nacimiento.
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="validationServer05" class="form-label">Mail</label>
-                    <input type="mail" class="form-control" id="validationServer05" placeholder="mail@ejemplo.com"
-                        required>
+                    <input type="mail" class="form-control" id="mail" placeholder="mail@ejemplo.com" required>
                     <div id="validationServer05Feedback" class="invalid-feedback">
                         Por favor ingrese su mail.
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="contraseña" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="contraseña" placeholder="Crear contraseña"
-                        required>
+                    <input type="password" class="form-control" id="contraseña" placeholder="Crear contraseña" required>
                     <div id="validationServer06Feedback" class="invalid-feedback">
                         Por favor ingrese una contraseña valida. 8 o mas caracteres y al menos una mayuscula.
                     </div>
                 </div>
                 <div class="col-md-6">
                     <label for="repetirContraseña" class="form-label">Repetir Contraseña</label>
-                    <input type="password" class="form-control" id="validationServer07" placeholder="Repetir contraseña"
-                        required>
+                    <input type="password" class="form-control" id="contraseña2" placeholder="Repetir contraseña" required>
                     <div id="validationServer07Feedback" class="invalid-feedback">
                         Por favor ingrese nuevamente la contraseña.
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
-                            aria-describedby="invalidCheck3Feedback" required>
+                        <input class="form-check-input" type="checkbox" value="" id="check" aria-describedby="invalidCheck3Feedback" required>
                         <label class="form-check-label" for="invalidCheck3">
                             Acepto <a class="termyCond" data-bs-toggle="modal" data-bs-target="#exampleModal">Terminos y Condiciones</a>
                         </label>
+                        <div class="valid-feedback">
+                        </div>
                         <div id="invalidCheck3Feedback" class="invalid-feedback">
                             Debe estar de acuerdo para poder registrarse
                         </div>
@@ -152,7 +147,7 @@
         </section>
 
 
-        <!-- Modal -->
+        <!-- Modal Terminos y condiciones-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -170,7 +165,6 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="./paginaEstatica.js"></script>
 </body>
 
 </html>

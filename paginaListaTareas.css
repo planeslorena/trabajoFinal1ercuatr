@@ -154,11 +154,6 @@ li {
     color: gray;
 }
 
-.check:checked {
-    border-image-width: 0px;
-    background-color: #0c5575;
-}
-
 .tarea {
     padding-left: 5px;
     text-align: left;

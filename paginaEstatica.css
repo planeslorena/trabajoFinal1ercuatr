@@ -30,8 +30,6 @@ nav a {
     background-color: #1079a6;
     color: #fff;
     padding: 10px;
-
-    /*flex-grow: 1;*/
 }
 
 nav a:hover {
@@ -51,7 +49,7 @@ nav a:hover {
     padding-top: 0px;
 }
 
-h4 {
+.carousel-caption h4 {
     font-size: 20px;
     font-weight: bold;
     color: #1698d0;
