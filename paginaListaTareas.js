@@ -92,6 +92,7 @@ const guardarNombreLista = (event) => {
 
 //Funcion para agregar tarea a la lista
 const agregarTarea = (event) => {
+
     const boton = event.target;
     const nombreTarea = boton.previousElementSibling;
     const divCrearTarea = boton.parentElement;
@@ -103,7 +104,7 @@ const agregarTarea = (event) => {
     } else {
         const nombreTareaMay = corregirNombre(nombreTarea.value);
         const html = `<li class= "elemento-lista">
-                            <input type ="checkbox" class= "check"</input>
+                            <input type ="checkbox" class="check" onclick="agregarAtributoCheck(event)">
                             <label class="tarea">${nombreTareaMay}</label>
                             <button class="btn bi bi-x" onclick="eliminarTarea(event)"></button>
                         </li>`;
@@ -112,6 +113,15 @@ const agregarTarea = (event) => {
         nombreTarea.value = "";
         alerta.innerHTML = "";
         nombreTarea.focus();
+    }
+}
+
+const agregarAtributoCheck = (event) => {
+    const checkbox = event.target;
+    if (checkbox.hasAttribute("checked") == false) {
+        checkbox.setAttribute("checked","true");
+    } else {
+        checkbox.removeAttibute("checked");
     }
 }
 
